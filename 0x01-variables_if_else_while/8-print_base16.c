@@ -14,13 +14,15 @@ int main(void)
 	{
 		if (num < 10)
 		{
-			putchar('0'+ num);
+			putchar('0' + num);
 		}
 		else if (num > 9)
 		{
-			putchar('a'+ (num - 10));
+			putchar('a' + (num - 10));
 		}
-		putchar('\n');
 	}
+
+	putchar('\n');
+
 	return (0);
 }
