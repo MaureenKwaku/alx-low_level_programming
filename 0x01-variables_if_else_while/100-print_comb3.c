@@ -15,5 +15,7 @@ int main(void)
 		putchar('0' + (num / 10));
 		putchar('0' + (num % 10));
 	}
+
+	putchar(',');
 	return (0);
 }
