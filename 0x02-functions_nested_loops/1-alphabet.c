@@ -3,6 +3,8 @@
 /**
  * main - Entry point
  *
+ * print_alphabet is void
+ *
  * Return: Always 0 (Success)
  *
  * function to print the alphabets in lower case
