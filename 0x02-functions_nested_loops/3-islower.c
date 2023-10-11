@@ -2,7 +2,7 @@
 
 /**
  * _islower - print the lower value
- *
+ *@c - parameter to be checked
  * Return: Always 0 (Success)
  */
 
