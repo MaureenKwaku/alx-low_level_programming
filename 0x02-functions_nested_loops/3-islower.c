@@ -2,9 +2,9 @@
 
 /**
  * _islower - print the lower value
- *@c - parameter to be checked
- * Return: Always 0 (Success)
- */
+ * @c: parameter to be checked
+ * Return: 1 or 0
+ * **/
 
 int _islower(int c)
 {
