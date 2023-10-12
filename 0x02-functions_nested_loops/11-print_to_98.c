@@ -3,7 +3,7 @@
 
 /**
  * print_to_98 : is the header
- * @n : number to start from
+ * @n: number to start from
  * Return: Always 0 (Success)
  */
 
@@ -46,7 +46,7 @@ void print_to_98(int n)
 				printf(", ");
 			}
 		}
-		printf ("\n");
+		printf("\n");
 	}
 	else if (n == 98)
 	{
