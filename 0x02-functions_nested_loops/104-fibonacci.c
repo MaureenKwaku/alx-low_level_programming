@@ -16,8 +16,8 @@ int main(void)
 
 	for (i = 1; i < 98; i++)
 	{
-		printf("%lu, ", next);
 		next = num1 + num2;
+		printf("%lu, ", next);
 
 		num1 = num2;
 		num2 = next;
