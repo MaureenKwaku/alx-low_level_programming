@@ -12,7 +12,7 @@ int main(void)
 	unsigned long int i;
 	unsigned long int next;
 
-	printf("%lu,%lu, " num1, num2);
+	printf("%lu,%lu, ", num1, num2);
 
 	for (i = 0; i < 96; i++)
 	{
@@ -22,6 +22,6 @@ int main(void)
 		num1 = num2;
 		num2 = next;
 	}
-	printf("\n")
+	printf("\n");
 		return (0);
 }
