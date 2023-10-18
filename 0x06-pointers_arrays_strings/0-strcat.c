@@ -24,8 +24,7 @@ char *_strcat(char *dest, char *src)
 
 	for (i = 0; i <= srclenght; i++)
 	{
-		dest[destlenght] = src[i];
+		dest[destlenght + i] = src[i];
 	}
-	_putchar('\n');
 	return (dest);
 }
