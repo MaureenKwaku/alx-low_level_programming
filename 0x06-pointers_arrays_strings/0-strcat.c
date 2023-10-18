@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strcat - function to be worked on
+ * _strcat - cncatenate two strings
  * @dest: parameter to be worked on
  * @src: parameter to be worked on
- * Return- always 0
+ * Return: dest
 **/
 
 char *_strcat(char *dest, char *src)
