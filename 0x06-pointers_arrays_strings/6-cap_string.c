@@ -20,6 +20,7 @@ char *cap_string(char *str)
 			str[count - 1] == '\n' ||
 			str[count - 1] == ';' ||
 			str[count - 1] == ',' ||
+			str[count - 1] == '.' ||
 			str[count - 1] == '!' ||
 			str[count - 1] == '?' ||
 			str[count - 1] == '"' ||
