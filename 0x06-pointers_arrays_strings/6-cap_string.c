@@ -33,6 +33,7 @@ char *cap_string(char *str)
 				str[count] -= 32;
 			}
 		}
+		count++;
 	}
 	return (str);
 }
