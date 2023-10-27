@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* sqrt- recurses to find the natura
+* _sqrt_a- recurses to find the natura
 * @b: is an iterator
 * @a: the parameter to be checked
 * Return: 1 or 0;
