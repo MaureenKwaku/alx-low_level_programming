@@ -15,7 +15,7 @@ int main(int argc, char **argv)
 
 	if (argc != 4)
 	{
-		printf("Usage: %s num1 operator num2\n", argv[0]);
+		printf("Error\n");
 		return (1);
 	}
 
@@ -24,7 +24,7 @@ int main(int argc, char **argv)
 
 	if (argv[2][1] != '\0')
 	{
-		printf("Error: Invalid operator\n");
+		printf("Error\n");
 		return (1);
 	}
 
@@ -32,7 +32,7 @@ int main(int argc, char **argv)
 
 	if (func == NULL)
 	{
-		printf("Error: Operator not supported\n");
+		printf("Error\n");
 		return (1);
 	}
 
