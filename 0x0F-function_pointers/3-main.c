@@ -1,6 +1,7 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "3-calc.h"
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 /**
  * main - Entry point
  * @argc: argument count
@@ -9,8 +10,8 @@
 **/
 int main(int argc, char *argv[])
 {
-	int num1, num2, result;
-	char *operator;
+	int num1, num2;
+	char *op;
 
 	if (argc != 4)
 	{
@@ -20,31 +21,20 @@ int main(int argc, char *argv[])
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-	operator = argv[2];
+	op = argv[2];
 
-	int (*operation[5])(int, int) = {op_add, op_sub, op_mul, op_div, op_mod};
-	char operators[5] = {'+', '-', '*', '/', '%'};
-	int index = -1;
-
-	for (int i = 0; i < 5; i++)
-	{
-		if (*operator == operators[i])
-		{
-			index = i;
-			break;
-		}
-	}
-	if (index == -1)
+	if (get_op_func(op) == NULL || op[1] != '\0')
 	{
 		printf("Error\n");
 		return (99);
 	}
-	if (num2 == 0 && (index == 3 || index == 4))
+
+	if ((*op == '/' && num2 == 0) || (*op == '%' && num2 == 0))
 	{
 		printf("Error\n");
 		return (100);
 	}
-	result = operation[index](num1, num2);
-	printf("%d\n", result);
+
+	printf("%d\n", get_op_func(op) (num1, num2));
 	return (0);
 }
