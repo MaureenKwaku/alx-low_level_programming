@@ -32,7 +32,7 @@ void print_opcodes(char *a, int n)
  * Return: 1 or 0
 **/
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	int n;
 
