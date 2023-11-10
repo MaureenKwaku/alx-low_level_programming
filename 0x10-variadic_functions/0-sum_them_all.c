@@ -6,7 +6,6 @@
 /**
  * sum_them_all - return the sum of all t parameters
  * @n: argument count
- * @argv: argument vector
  * Return: 1 or 0
 **/
 
@@ -16,7 +15,8 @@ int sum_them_all(const unsigned int n, ...)
 	unsigned int i;
 
 	va_list holder;
-	va_start (holder, n);
+
+	va_start(holder, n);
 
 	for (i = 0; i < n; i++)
 	{
