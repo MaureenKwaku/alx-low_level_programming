@@ -39,7 +39,7 @@ int main(int argc, char **argv)
 	if (argc != 2)
 	{
 		printf("Error\n");
-		return (1);
+		exit(1);
 	}
 
 	n = atoi(argv[1]);
@@ -47,7 +47,7 @@ int main(int argc, char **argv)
 	if (n < 0)
 	{
 		printf("Error\n");
-		return (2);
+		exit(2);
 	}
 	print_opcodes((char *)&main, n);
 	return (0);
